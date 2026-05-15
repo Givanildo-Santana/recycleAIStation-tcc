@@ -4,7 +4,7 @@ Projeto de TCC desenvolvido na UNIP. Um sistema que classifica resíduos sólido
 
 ## Tecnologias
 
-Python, PySide6, PyTorch (YOLOv5/YOLOv8), OpenCV, SQLite, Arduino
+Python, PySide6, PyTorch, YOLOv5, OpenCV, SQLite, Arduino
 
 ## Requisitos
 
