@@ -1,0 +1,30 @@
+# RecycleAI — Configuração do Dataset de Refinamento YOLO
+# Usado pelo fluxo de refinamento (fine-tuning) de modelo existente.
+#
+# IMPORTANTE: as classes (nc e names) devem ser idênticas às do pacote base.
+# Alterar a ordem ou quantidade de classes tornará o refinamento incompatível.
+#
+# Estrutura esperada:
+#   dataset_refino/
+#     data.yaml      ← este arquivo
+#     train/images/  ← novas imagens de treino para refinamento
+#     train/labels/  ← labels .txt (formato YOLO)
+#     val/images/    ← imagens de validação
+#     val/labels/
+#     test/images/   ← opcional
+#     test/labels/   ← opcional
+
+path: .          # raiz do dataset (relativo a data.yaml)
+train: train/images
+val:   val/images
+test:  test/images   # remova esta linha se não houver conjunto de teste
+
+# Número de classes — deve coincidir com o pacote base escolhido
+nc: 4
+
+# Nomes das classes — ordem e grafia devem ser idênticas ao pacote base
+names:
+  - metal
+  - papel
+  - plastico
+  - vidro

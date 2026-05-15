@@ -1,0 +1,13 @@
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 4
+names: ['metal', 'papel', 'plastico', 'vidro']
+
+roboflow:
+  workspace: nassif
+  project: dataset_manual-b8k4k
+  version: 1
+  license: MIT
+  url: https://universe.roboflow.com/nassif/dataset_manual-b8k4k/dataset/1

@@ -1,0 +1,63 @@
+# Saídas do treinamento
+runs/
+exports/
+
+# Dataset ativo (imagens e labels não versionar — apenas data.yaml e estrutura)
+datasets/dataset_ativo/train/images/*
+datasets/dataset_ativo/train/labels/*
+datasets/dataset_ativo/val/images/*
+datasets/dataset_ativo/val/labels/*
+datasets/dataset_ativo/test/images/*
+datasets/dataset_ativo/test/labels/*
+!datasets/dataset_ativo/train/images/.gitkeep
+!datasets/dataset_ativo/train/labels/.gitkeep
+!datasets/dataset_ativo/val/images/.gitkeep
+!datasets/dataset_ativo/val/labels/.gitkeep
+!datasets/dataset_ativo/test/images/.gitkeep
+!datasets/dataset_ativo/test/labels/.gitkeep
+
+# Dataset de refinamento (mesma regra — apenas data.yaml e estrutura)
+datasets/dataset_refino/train/images/*
+datasets/dataset_refino/train/labels/*
+datasets/dataset_refino/val/images/*
+datasets/dataset_refino/val/labels/*
+datasets/dataset_refino/test/images/*
+datasets/dataset_refino/test/labels/*
+!datasets/dataset_refino/train/images/.gitkeep
+!datasets/dataset_refino/train/labels/.gitkeep
+!datasets/dataset_refino/val/images/.gitkeep
+!datasets/dataset_refino/val/labels/.gitkeep
+!datasets/dataset_refino/test/images/.gitkeep
+!datasets/dataset_refino/test/labels/.gitkeep
+
+# Pacotes base (pesos .pt não versionados — apenas manifest.json e estrutura)
+modelos-base/**/*.pt
+modelos-base/**/*.torchscript
+modelos-base/**/*.onnx
+!modelos-base/.gitkeep
+
+# Peso base controlado (yolov5s.pt verificado — arquivo .pt ignorado; estrutura versionada)
+weights/base/*.pt
+!weights/base/.gitkeep
+
+# Pesos baixados pelo Ultralytics
+*.pt
+*.onnx
+*.torchscript
+!datasets/**
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Ambiente virtual isolado do treinador (criado por setup.bat / setup.sh)
+runtime/
+!runtime/.gitkeep
+
+# Logs e temp
+*.log
+wandb/

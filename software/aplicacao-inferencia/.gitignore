@@ -1,0 +1,18 @@
+# ── Build e distribuição (artefatos PyInstaller) ─────────────────────────────
+dist/
+build/
+
+# ── Runtime operacional (venv isolado do projeto) ─────────────────────────────
+runtime_inferencia/venv/
+
+# ── Banco de dados em runtime (criado pelo bootstrap no primeiro boot) ────────
+data/recycleai.db
+
+# ── Modelos importados pelo operador (não versionar) ─────────────────────────
+runtime_inferencia/modelos_importados/
+!runtime_inferencia/modelos_importados/.gitkeep
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo

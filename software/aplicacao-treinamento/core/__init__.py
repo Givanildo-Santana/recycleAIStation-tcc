@@ -1,0 +1,1 @@
+# aplicacao-treinamento/core

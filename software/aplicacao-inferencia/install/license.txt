@@ -1,0 +1,20 @@
+RecycleAI-Station — Sistema de Triagem Inteligente de Resíduos
+Versão 1.0.0
+
+Trabalho de Conclusão de Curso — UNIP Ciência da Computação
+Autores: Clayton Maciel Tancredo, Givanildo Santana Ribeiro, Luis Felipe Nassif
+Orientador: Prof. Marco Gomes
+
+Dependências de terceiros incluídas neste instalador:
+  - Python 3.10.11 runtime (PSF License)
+  - PyTorch 2.2.2+cpu (BSD License)
+  - PySide6 6.11.0 (LGPL v3)
+  - OpenCV 4.8.1 (Apache 2.0)
+  - bcrypt (Apache 2.0)
+  - pyserial (BSD License)
+
+O operador final não precisa instalar Python, SQLite ou qualquer
+outro runtime. Tudo está incluído neste instalador.
+
+AVISO: Este sistema requer Visual C++ Redistributable 2015-2022 (x64),
+normalmente já presente em sistemas Windows atualizados.
