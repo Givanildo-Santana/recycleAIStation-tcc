@@ -1,6 +1,6 @@
 # RecycleAI-Station
 
-Projeto de TCC desenvolvido na UNIP. Um sistema que classifica resíduos sólidos em tempo real usando visão computacional e controla uma esteira via Arduino para separar os materiais automaticamente.
+Projeto de TCC um sistema que classifica resíduos sólidos em tempo real usando visão computacional e controla uma esteira via Arduino para separar os materiais automaticamente.
 
 ## Tecnologias
 
